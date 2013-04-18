@@ -1,4 +1,4 @@
-use <Thread_Library.scad>
+use <../lib/Thread_Library.scad>
 
 length=45;
 pitch=10;

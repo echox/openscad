@@ -61,8 +61,8 @@ module create_screw_cup() {
 
 module create_screw() {
 	union() {
- 		screw_thread(diameter,stepPerTurn,toothDegree,length,resolution,1);
-		translate([0,0,cupHeight*-1]) create_screw_cup();
+ 		translate([0,0,cupHeight]) screw_thread(diameter,stepPerTurn,toothDegree,length,resolution,1);
+		create_screw_cup();
 	}
 }
 
